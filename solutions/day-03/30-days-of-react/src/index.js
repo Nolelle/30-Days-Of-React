@@ -8,10 +8,17 @@ const welcome = "Welcome to 30 Days Of React";
 const title = "Getting Started React";
 const subtitle = "JavaScript Library";
 const author = {
-  firstName: "Asabeneh",
-  lastName: "Yetayeh",
+  firstName: "Edmund",
+  lastName: "Yu",
 };
 const date = "Oct 2, 2020";
+
+const headerStyles = {
+  backgroundColor: '#61DBFB',
+  fontFamily: 'Helvetica Neue',
+  padding: 25,
+  lineHeight: 1.5,
+}
 
 // JSX element, header
 const header = (
