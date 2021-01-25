@@ -2,7 +2,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import pepeHands from "./images/pepehands.jpg";
-import image from './images/frontend_technologies.png'
 // To get the root element from the HTML document
 // JSX element, header
 const welcome = "Welcome to 30 Days Of React";
@@ -74,21 +73,6 @@ const main = (
       {result}
       {personAge}
     </div>
-
-    <div className="form-wrapper">
-    <h1>Subscribe</h1>
-    <p>Sign up with your email address to receive news and updates</p>
-    <form action=''>
-     <label for="fname">First name:</label>
-     <input type="text" id="fname" name="fname"><br>
-     <label for="lname">Last name:</label>
-     <input type="text" id="lname" name="lname"><br>
-      <input type="submit" value="Submit">
-        <button type="button">Click Me!</button>
-      </form>
-    </div>
-   
-
   </main>
 );
 
@@ -97,20 +81,15 @@ const copyRight = "Copyright 2020";
 // JSX element, footer
 const footer = (
   <footer>
-      <div>
-    <img src={pepeHands} alt="pepehands" />
-    <img src={image} alt="image" />
-    </div>
     <div className="footer-wrapper">
       <p>{copyRight}</p>
     </div>
-   
   </footer>
 );
 
-const tech = (
+const user = (
   <div>
-    <img src={image} alt="images" />
+    <img src={pepeHands} alt="pepehands" />
   </div>
 );
 
@@ -125,4 +104,4 @@ const app = (
 
 const rootElement = document.getElementById("root");
 // we render the JSX element using the ReactDOM package
-ReactDOM.render(app, rootElement);
+ReactDOM.render(user, rootElement);
